@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Todos</title>
+</head>
+<body>
+    <h1>All todos</h1>
+    <ul>
+        <% for(let todo of todos){%>
+            <li><a href="/todos/<%=todo._id%>"><%=todo.title%></a></li>
+        <%}%>
+    </ul>
+</body>
+</html>

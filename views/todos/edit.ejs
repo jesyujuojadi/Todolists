@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Todo</title>
+</head>
+
+<body>
+    <h1>Edit Todo</h1>
+    <form action="/todos/<%=todo._id%>?_method=PUT" method="POST">
+        <label for="title">Todo Title</label>
+        <input type="text" name="title" id="title" value="<%=todo.title%>">
+        <label for="description">Description</label>
+        <input type="text" id="descr" name="descr" value="<%= todo.description %>">
+        <button>Submit</button>
+    </form>
+
+    <a href="/todos/<%=todo._id%>">Cancel</a>
+
+</body>
+
+</html>
